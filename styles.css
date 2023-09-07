@@ -1,0 +1,246 @@
+.task-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-bottom: 3%;
+    padding:1%;
+    background-color: rgba(128, 0, 128, 0.338);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 25px;}
+.task-bar-links{
+    font-size: 20pt;
+    text-decoration: none;
+    color: rgb(110, 20, 140);
+    transition: text-shadow 0.3s;
+    font-family: Arial, Helvetica, sans-serif;}
+.task-bar-links:hover{
+    text-shadow: 3px 7px rgba(34, 0, 44, 0.232);}
+@media (max-width: 480px){
+    .task-bar-mobile{
+        font-size: small;}}
+.skill-heading{
+    color:rgb(110, 20, 140);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-top:10% ;}
+.bio-div{
+    justify-content: center;
+    display: flex;
+    position:absolute;
+    margin-top:5%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    shape-outside: url("images/hiking.JPG");}
+.bio-p{
+    background-color: rgba(128, 0, 128, 0.338);
+    border-radius: 25px;
+    padding:3%;
+    height:auto;
+    width:auto;
+    max-width: 50%;
+    margin-top:1%;
+    display: flex;
+    align-content: center;
+    font-size: large;}
+.bio-pic{
+    margin:1%;
+    float:left;
+    height: 90%;
+    width: 90%;
+    min-width:60%;}
+@media (max-width: 780px){
+    .mobile-bio-div{
+        width:90%;
+        font-size: small;
+        margin:0%;
+        max-width:none;
+        text-align: center;
+        justify-content: center;
+        margin:5%;
+        display: flex;}
+    .mobile-pic{
+        display: none;}}
+.projects-div{
+    background-color: rgba(128, 0, 128, 0.338);
+    padding:5%;
+    margin-left:10%;
+    margin-right: 10%;
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;}
+.project-images{
+    width: auto;
+    height: 100%;
+    max-height: 250pt;}
+.project-button{
+    color:transparent;
+    background-color: transparent;
+    border-color:transparent;
+    width:100%;
+    height:100%;}
+@media (min-width: 225px){
+    .project-images{
+        height:80%;
+        width:80%;}}
+.icon-div{
+    background-color: rgba(128, 0, 128, 0.338);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    border-radius: 25px;
+    height: auto;
+    position: sticky;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1%;}
+.icons{
+    filter:brightness(40%);
+    height: 10%;
+    width: 10%;
+    transition: .5s;}
+.icons:hover{
+    height: 12%;
+    width: 12%;}
+@media (min-width: 375px){
+    .icons{
+        width: 5%;
+        height: 5%;}}
+
+
+/* POWER POINT STYLES */
+
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 25px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display:flex;
+    height:45%;
+    max-width: 50%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
