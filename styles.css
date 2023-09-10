@@ -9,6 +9,7 @@
     margin-right: 10%;
     border-radius: 25px;}
 .task-bar-links{
+    transition: href .5s;
     font-size: 20pt;
     text-decoration: none;
     color: rgb(110, 20, 140);
