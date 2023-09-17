@@ -22,7 +22,14 @@
     .task-bar-mobile{
         font-size: small;}}
 
-
+.custom-name{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.7;
+}
 
 .skill-heading{
     color:rgb(110, 20, 140);
@@ -32,7 +39,13 @@
     margin-top:10% ;}
 
 
-
+@media (max-width: 780px){
+    .mobile-bio-div{
+       display: none;
+       background-color: transparent;}
+    .mobile-p{
+        display: none;
+    }}
 .bio-div{
     justify-content: center;
     display: flex;
@@ -61,22 +74,15 @@
     float:left;
     height: 90%;
     width:60%;}
+
+
 @media (max-width: 780px){
-    .mobile-bio-div{
-        width:90%;
-        font-size: small;
-        margin:0%;
-        max-width:none;
-        text-align: center;
-        justify-content: center;
-        margin-left:5%;
-        margin-right:5%;
-        margin-top:3%;
-        display: flex;}
     .mobile-pic{
-        display: none;}}
-
-
+        display: none;}
+    .mobile-projects-div{
+        flex-direction: column;}
+    .mobile-project-card-p{
+        font-size: medium;}}
 .project-div-big{
     background-color: rgba(128, 0, 128, 0.338);
     border-radius: 25px;
@@ -118,8 +124,7 @@
 .project-card:hover{
     transition: .5s;
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(128, 0, 128, 0.338);
-}
+    box-shadow: 0 0 15px rgba(128, 0, 128, 0.338);}
 .project-button{
     color:transparent;
     background-color: transparent;
