@@ -37,27 +37,29 @@
     justify-content: center;
     display: flex;
     position:absolute;
-    margin-top:3%;
-   
+    margin-top: 4%;
+    margin-left:10%;
+    margin-right:10%;
+    padding-top: 2%;
+    height: 60%;
+    width: 80%;
     align-content: center;
-    shape-outside: url("images/hiking.JPG");}
-.bio-p{
-    background-color: rgba(128, 0, 128, 0.338);
+    shape-outside: url("images/hiking.JPG");
     border-radius: 25px;
-    padding:3%;
-    height:auto;
-    width:auto;
-    max-width: 50%;
-    margin-top:1%;
+    background-color:rgba(128, 0, 128, 0.338);}
+.bio-p{
+    padding-left:3%;
+    padding-right: 3%;
     display: flex;
     align-content: center;
     font-size: large;}
 .bio-pic{
-    margin:1%;
+    margin-top: .5%;
+    margin-left: 1%;
+    margin-right: 1%;
     float:left;
     height: 90%;
-    width: 90%;
-    min-width:60%;}
+    width:60%;}
 @media (max-width: 780px){
     .mobile-bio-div{
         width:90%;
@@ -108,9 +110,15 @@
 .project-card{
     background-color: rgba(128, 0, 128, 0.338);
     border-radius: 25px;
-    padding:3%;
+    padding:5%;
     padding-top:10%;
-    height: 300pt;}
+    height: 300pt;
+    transition: .5s;}
+.project-card:hover{
+    transition: .5s;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(128, 0, 128, 0.338);
+}
 .project-button{
     color:transparent;
     background-color: transparent;
@@ -126,8 +134,8 @@
 
 .icon-div{
     background-color: rgba(128, 0, 128, 0.338);
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 3%;
     border-radius: 25px;
     height: auto;
@@ -135,8 +143,7 @@
     left: 5%;
     right: 5%;
     display: flex;
-    justify-content: space-evenly;
-    margin: 1%;}
+    justify-content: space-evenly;}
 .icons{
     filter:brightness(40%);
     height: 10%;
