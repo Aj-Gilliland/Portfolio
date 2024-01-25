@@ -1,4 +1,80 @@
+/* all */
+:root{
+    --grey:rgb(49, 49, 49)
+    --black:black
+    --white:white
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* misc */
+.footerStuff{
+  
+}
+.iconicLook{
+    width:calc(1% + 50px);
+}
+.iconicLook2{
+    width:calc(100% + 50px);
+}
+.titleThing{
+    text-shadow: 2px 2px var(--grey);
+}
+.background{
+    background-color: rgb(49, 49, 49);
+}
+.prettyDivider{
+    color: white;
+}
+/* color */
+.text-white{
+    color: var(--white);
+}
+/* icon carousel */
+.logos::before, 
+.logos::after {
+    content: '';
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
 
+.logos::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #030303);
+}
+
+.logos::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #030303);
+}
+
+.logos-slide {
+    animation: 10s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 60px;
+    margin: 0 30px;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* old css, dunno what all i took most of this out but i dont have the time to go in and delete everything here */
+/* this is old code VvVvVvV */
 .contact-site-links{
     text-decoration: none;
     display: flex;
@@ -27,12 +103,17 @@
     flex-direction: row;
     width: 75%;
     margin-top: 5%;
-    margin-left: 15%;}
+    margin-left: 15%;} 
 .side-by-side{
     justify-content: center;
+    align-content: center;
     display: flex; 
     flex-direction: row;
     width: 100%;}
+.sideways{
+    display: flex;
+    flex-direction: row;
+}
 .contact-title{
     display: flex; 
     justify-content: center; 
@@ -244,149 +325,9 @@
     justify-content: space-evenly;}
 .icons{
     filter:brightness(40%);
-    height: 10%;
-    width: 10%;
     transition: .5s;}
 .icons:hover{
     transition: all 0.65s;
     transform: rotateY(360deg);}
-@media (min-width: 375px){
-    .icons{
-        width: 5%;
-        height: 5%;}}
 
 
-/* POWER POINT STYLES */
-
-
-.final-touch {
-    margin: 0px;
-    padding: 0px;
-}
-
-.carousel {
-    position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 25px;
-    padding-bottom: 3%;
-    padding-top: 3%;
-    background-color: rgba(128, 0, 128, 0.338);
-}
-
-.carousel-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    border-radius: 25px;
-}
-
-.carousel-open:checked + .carousel-item {
-    position: static;
-    opacity: 100;
-}
-
-.carousel-item {
-    display: flex;
-    position: absolute;
-    opacity: 0;
-    -webkit-transition: opacity 0.6s ease-out;
-    transition: opacity 0.6s ease-out;
-}
-
-.carousel-item img {
-    display:flex;
-    height:45%;
-    max-width: 50%;
-    text-align: center;
-    justify-content: center;
-    margin-left: 25%;
-}
-
-.carousel-control {
-    background: rgba(0, 0, 0, 0.28);
-    border-radius: 50%;
-    border-color: transparent;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    font-size: 40px;
-    height: 40px;
-    line-height: 35px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    cursor: pointer;
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    text-align: center;
-    width: 40px;
-    z-index: 10;
-}
-
-.carousel-control.prev {
-    left: 2%;
-}
-
-.carousel-control.next {
-    right: 2%;
-}
-
-.carousel-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
-}
-
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
-    display: block;
-}
-
-.carousel-indicators {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 2%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
-}
-
-.carousel-indicators li {
-    display: inline-block;
-    margin: 0 5px;
-}
-
-.carousel-bullet {
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-}
-
-.carousel-bullet:hover {
-    color: #aaaaaa;
-}
-
-#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-    color: #428bca;
-}
-
-#title {
-    width: 100%;
-    position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
-}
