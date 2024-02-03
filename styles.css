@@ -10,9 +10,7 @@
     box-sizing: border-box;
 }
 /* misc */
-.footerStuff{
-  
-}
+
 .iconicLook{
     width:calc(1% + 50px);
 }
@@ -31,6 +29,9 @@
 /* color */
 .text-white{
     color: var(--white);
+}
+.imageInvert{
+    filter: invert(0);
 }
 /* icon carousel */
 .logos::before, 
